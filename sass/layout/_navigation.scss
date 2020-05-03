@@ -1,0 +1,114 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 12vh;
+  background-color: $color-black;
+  color: #fff;
+}
+
+.logo {
+  &__image {
+    height: 6rem;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    width: 65rem;
+
+    li {
+      list-style: none;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.6rem;
+      letter-spacing: 0.3rem;
+      border-radius: 0.4rem;
+    }
+
+    a:hover {
+      background-color: $color-tertiary;
+      cursor: pointer;
+      padding: 0.6rem;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    div {
+      width: 2.5rem;
+      height: 0.5rem;
+      margin: 0.3rem;
+      background-color: $color-white;
+      transition: all 0.3s ease;
+      border-radius: 2px;
+    }
+  }
+}
+
+// Responsiveness and navigation bar for mobile
+@media screen and (max-width: 1024px) {
+  .logo__links {
+    width: 50rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .logo {
+    &__links {
+      position: absolute;
+      right: 0;
+      height: 92vh;
+      top: 8vh;
+      background-color: $color-black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+    }
+
+    &__links li {
+      opacity: 0;
+    }
+
+    &__burger {
+      display: block;
+    }
+  }
+}
+
+// Navbar animation linked with JS file
+.logo__active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
