@@ -1,0 +1,93 @@
+.services {
+  background: $color-white;
+  height: 100vh;
+
+  &__main {
+    text-align: center;
+    color: $color-black;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  &__border {
+    width: 16.5rem;
+    height: 2px;
+    background: $color-primary;
+    margin: 2.5rem auto;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__box {
+    max-width: 25%;
+    padding: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    color: $color-black;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 7rem;
+    height: 7rem;
+    border: 3px solid $color-primary-light;
+    transform: rotate(45deg);
+    margin-bottom: 2.3rem;
+    margin-top: 1rem;
+    color: $color-primary-light;
+    // color: $color-grey-dark-1;
+    transition: 0.3s linear;
+
+    i {
+      line-height: 6.5rem;
+      transform: rotate(-45deg);
+      font-size: 2.6rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  &__desc {
+    font-size: 1.3rem;
+  }
+}
+
+.services__box:hover .services__icon {
+  background: $color-primary-light;
+  color: $color-white;
+}
+
+.inner-width {
+  width: 100%;
+  max-width: 120rem;
+  margin: auto;
+  padding: 0rem 2rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 960px) {
+  .services__box {
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services__box {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services__box {
+    max-width: 100%;
+  }
+}

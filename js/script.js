@@ -1,4 +1,4 @@
-// Mobile navbar slide animation
+// MOBILE NAVBAR SLIDE ANIMATION
 const navSlide = () => {
   const burger = document.querySelector(".logo__burger");
   const nav = document.querySelector(".logo__links");
@@ -6,7 +6,7 @@ const navSlide = () => {
 
   burger.addEventListener("click", () => {
     //   Toggle navigation
-    nav.classList.toggle("logo__active");
+    nav.classList.toggle("wrapper-active");
 
     //   Animate links
     navLinks.forEach((link, index) => {
@@ -23,3 +23,4 @@ const navSlide = () => {
 };
 
 navSlide();
+// END OF NAVBAR ANIMATION

@@ -1,60 +1,83 @@
-nav {
+.wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 12vh;
+  min-height: 8vh;
   background-color: $color-black;
-  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 .logo {
+  // position: fixed;
+
+  &__btn {
+    &:link,
+    &:visited {
+      color: $color-white;
+      text-decoration: none;
+      border-bottom: 1px solid $color-primary;
+      padding: 0.4rem;
+      transition: all 0.2s;
+      margin: 0rem 1.2rem;
+    }
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+      padding: 0.4rem;
+      border-radius: 3px;
+      transform: translateY(-2px);
+    }
+  }
+
   &__image {
-    height: 6rem;
+    height: 5rem;
+  }
+
+  &__locations {
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    margin-top: -1.5rem;
+    margin-bottom: 0.5rem;
   }
 
   &__links {
     display: flex;
     justify-content: space-around;
-    width: 65rem;
+    width: 40%;
+    font-weight: 500;
+    text-transform: uppercase;
 
     li {
       list-style: none;
     }
-    a {
-      color: #fff;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 1.6rem;
-      letter-spacing: 0.3rem;
-      border-radius: 0.4rem;
-    }
 
-    a:hover {
-      background-color: $color-tertiary;
-      cursor: pointer;
-      padding: 0.6rem;
+    a {
+      color: $color-white;
+      text-decoration: none;
+      letter-spacing: 0.3rem;
+      font-size: 1.4rem;
     }
   }
 
   &__burger {
     display: none;
-
+    cursor: pointer;
     div {
       width: 2.5rem;
-      height: 0.5rem;
-      margin: 0.3rem;
+      height: 0.3rem;
       background-color: $color-white;
+      margin: 0.5rem;
       transition: all 0.3s ease;
-      border-radius: 2px;
     }
   }
 }
 
-// Responsiveness and navigation bar for mobile
 @media screen and (max-width: 1024px) {
   .logo__links {
-    width: 50rem;
+    width: 60%;
   }
 }
 
@@ -63,6 +86,7 @@ nav {
     overflow-x: hidden;
   }
   .logo {
+    position: sticky;
     &__links {
       position: absolute;
       right: 0;
@@ -72,24 +96,23 @@ nav {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 30%;
+      width: 50%;
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
-    }
 
-    &__links li {
-      opacity: 0;
+      li {
+        opacity: 0;
+      }
     }
 
     &__burger {
       display: block;
     }
   }
-}
 
-// Navbar animation linked with JS file
-.logo__active {
-  transform: translateX(0);
+  .wrapper-active {
+    transform: translateX(0%);
+  }
 }
 
 @keyframes navLinkFade {
@@ -105,10 +128,12 @@ nav {
 
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
+  background-color: $color-primary;
 }
 .toggle .line2 {
   opacity: 0;
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+  background-color: $color-primary;
 }

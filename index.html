@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet"
     />
+    
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -23,45 +24,133 @@
   <body>
 
     <!-- Main Navbar -->
-<nav>
-  <div class="logo">
-    <a href="#"><img src="/img/logo-white.png" alt="VaynerMedia Logo" class="logo__image"></a>
-  </div>
-  <div class="logo__list">
-  <ul class="logo__links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Careers</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</div>
-<div class="logo__burger">
-  <div class="line1"></div>
-  <div class="line2"></div>
-  <div class="line3"></div>
-</div>
-</nav>
-<!-- End of Navbar -->
-
-  <!-- Main header -->
-  <header class="header">
-    <div class="header__logo">
-        <div class="header__logo-image">
+    <nav class="wrapper">
+      <div class="logo">
+        <a href="#"><img src="/img/logo-white.png" alt="VaynerMedia Logo" class="logo__image"></a>
+        <h4 class="logo__locations">NYC, LON, ,NOOGA, SG, LA</h4>
+      </div>
+      <ul class="logo__links">
+        <li><a href="#" class="logo__btn">Home</a></li>
+        <li><a href="#services" class="logo__btn">Services</a></li>
+        <li><a href="#about" class="logo__btn">About</a></li>
+        <li><a href="#clients" class="logo__btn">Clients</a></li>
+        <li><a href="#contact" class="logo__btn">Contact</a></li>
+      </ul>
+      <div class="logo__burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <!-- End of Navbar -->
+    </nav>
+    
+    
+      <!-- Main header -->
+      <header class="header" id="header">
+        <div class="header__welcome">
+          <h1 class="header__main">
+            <span class="header__primary-main">Hi there! We're Vayner.</span>
+            <span class="header__primary-sub">A full service digital agency built for the now. <!-- We drive business
+              outcomes via best in class creative, media, influencer marketing &
+              everything in between.</span> -->
+          </h1>
+          <div class="center-btn">
+            <a href="#services" class="btn-main btn-white">Learn More</a>
+          </div>
         </div>
-        <h4 class="header__locations">NYC, LON, ,NOOGA, SG, LA</h4>
-        <p class="paragraph">
-          A full service digital agency built for the now! We drive business
-          outcomes via best in class creative, media, influencer marketing &
-          everything in between.
-        </p>
-    </div>
-  </header>
+      </header>
+    
+      <!-- SERVICES SECTION -->
+      <section class="services" id="services">
+      <div class="inner-width">
+        <h1 class="services__main u-margin-top-small">Our Services</h1>
+        <div class="services__border"></div>
+        <div class="services__container">
+          <div class="services__box">
+            <div class="services__icon">
+              <i class="fas fa-chess-queen"></i>
+            </div>
+            <div class="services__title">Strategy</div>
+            <div class="services__desc">
+              Ultimately, it’s consumer attention that informs how we execute.            
+            </div>
+          </div>
+          <div class="services__box">
+            <div class="services__icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <div class="services__title">Creative</div>
+            <div class="services__desc">
+              We have one goal – to create content that works.
+            </div>
+          </div>
+          <div class="services__box">
+            <div class="services__icon">
+              <i class="fas fa-video"></i>
+            </div>
+            <div class="services__title">Production</div>
+            <div class="services__desc">
+              Modern equipment make our end-to-end process streamlined and nimble.            
+            </div>
+          </div>
+          <div class="services__box">
+            <div class="services__icon">
+              <i class="fas fa-share-alt-square"></i>
+            </div>
+            <div class="services__title">Paid Media</div>
+            <div class="services__desc">
+              We oversee every platform and are focus on driving real business results.
+            </div>
+          </div>
+          <div class="services__box">
+            <div class="services__icon">
+              <i class="fas fa-hashtag"></i>
+            </div>
+            <div class="services__title">Influencers</div>
+            <div class="services__desc">
+               Influencer programs that pass equity from their passionate audiences to our clients.            
+              </div>
+          </div>
+          <div class="services__box">
+            <div class="services__icon">
+              <i class="fas fa-tags"></i>
+            </div>
+            <div class="services__title">4DS</div>
+            <div class="services__desc">
+              You know your business. We know digital marketing. Let’s grow together.           
+             </div>
+          </div>
+          <div class="services__box">
+            <div class="services__icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="services__title">Ecommerce</div>
+            <div class="services__desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, quis!
+            </div>
+          </div>
+          <div class="services__box">
+            <div class="services__icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="services__title">Vaynertalent</div>
+            <div class="services__desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, quis!
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <!-- About Us -->
 
-  <main>
-<section class="section-about">
-  <div id="about" class="section__about">
+      </section>
+      
+      <!-- END OF SERVICES SECTION -->
+
+
+<!-- ABOUT US SECTION -->
+
+<section class="about" id="about">
+  <div class="about__main">
       <div class="row">
           <h2>ABOUT US</h2>
           <div class="p-heading p-large">
@@ -145,17 +234,10 @@
 
               <!-- End of top Section -->
 
-<!-- What We Do Section -->
-<section class="what-we-do">
-<h2 class="we-do">What We Do</h2>
 
-</div>
-</section>
 
-<!-- End of What We Do Section -->
-
-<!-- Our Clients Section -->
-<section class="our-clients">
+<!-- OUR CLIENTS SECTION -->
+<section class="clients" id="clients">
     <div class="container">
       <div class="row">
           <h2 class="clients">Our Clients</h2>
@@ -169,11 +251,10 @@
     </div>
   </section>
 
-    <!-- End of Our Clients Section -->
+<!-- END OF CLIENTS SECTION -->
 
-
-    <!-- Contact Form Section -->
-    <section class="contact-form">
+<!-- CONTACT FORM SECTION -->
+<section class="contact-form">
     <form action="#">
       <h1 class="contact__header">Contact Us</h1>
       <div class="info">
@@ -201,13 +282,13 @@
   <label for="additional-info">Yes, I'd also like to receive information about additional products or services that may be of interest to me. Information submitted through this form is subject to our Privacy Policy</label><br>
     </form>
   </section>
-</main>
 
-<!-- End of Main Section -->
+<!-- END OF CONTACT FORM SECTION -->
 
+<!-- END OF MAIN SECTION -->
 
-    <!-- Footer -->
-    <footer class="footer">
+<!-- FOOTER SECTION -->
+<footer class="footer">
       <div class="footer__logo-box">
         <img src="" alt="Full Logo" class="footer_logo" />
       </div>
@@ -237,7 +318,7 @@
         </div>
       </div>
 
-      <!-- Social Media Links -->
+<!-- SOCIAL MEDIA LINKS -->
 
       <div class="col-md-4">
         <div class="footer-col last">
@@ -266,10 +347,11 @@
       </div>
     </footer>
 
-  <!-- end of footer -->
+<!-- END OF FOOTER -->
 
-  <!-- Copyright -->
-  <div class="copyright">
+<!-- COPYRIGHT WITH GITHUB LINK -->
+
+<div class="copyright">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -284,7 +366,8 @@
     </div>
     <!-- end of container -->
   </div>
-  <!-- end of copyright -->
-    <script src="/js/script.js"></script>
+<!-- END OF COPYRIGHT -->
+
+  <script src="/js/script.js"></script>
   </body>
 </html>
