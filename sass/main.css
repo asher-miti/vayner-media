@@ -9,7 +9,6 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -36,6 +35,10 @@ body {
 
 .u-margin-top-small {
   margin-top: 2rem !important;
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem !important;
 }
 
 .u-margin-top-big {
@@ -171,6 +174,7 @@ body {
           justify-content: center;
   margin-top: -1.5rem;
   margin-bottom: 0.5rem;
+  font-weight: 400;
 }
 
 .logo__links {
@@ -311,7 +315,7 @@ body {
 .header__welcome {
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 23%;
   -webkit-transform: translate(-5%, -50%);
           transform: translate(-5%, -50%);
 }
@@ -325,10 +329,10 @@ body {
 }
 
 .header__primary-main {
-  display: block;
   font-size: 6rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
+  display: block;
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
   -webkit-animation-duration: 1s;
@@ -345,6 +349,48 @@ body {
   margin-left: 17rem;
   -webkit-animation: moveInRight 1s ease-out;
           animation: moveInRight 1s ease-out;
+}
+
+.services-btn {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.services-btn__secondary:link, .services-btn__secondary:visited {
+  border: 2px solid black;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, #fff 0%, #fff 50%, #f76a2d 50%);
+  background-size: 220%;
+  letter-spacing: 0.2rem;
+  border-radius: 3px;
+  padding: 0.5rem 1.8rem;
+  color: #000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.services-btn__secondary:hover {
+  color: #fff;
+  border-color: #333;
+  background-position: 99%;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.services-btn__secondary:active {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .center-btn {
@@ -373,13 +419,11 @@ body {
   color: #fff;
   -webkit-transform: translateX(10px);
           transform: translateX(10px);
-  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .services {
   background: #fff;
-  height: 100vh;
+  height: 110vh;
 }
 
 .services__main {
@@ -422,8 +466,8 @@ body {
   border: 3px solid #f76a2d;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  margin-bottom: 2.3rem;
-  margin-top: 1rem;
+  margin-bottom: 2.6rem;
+  margin-top: 1.5rem;
   color: #f76a2d;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
@@ -476,5 +520,97 @@ body {
   .services__box {
     max-width: 100%;
   }
+}
+
+.about__container1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("/img/photograph-of-men-having-conversation-seating-on-chair-1015568.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/img/photograph-of-men-having-conversation-seating-on-chair-1015568.jpg");
+  height: 55vh;
+  background-size: cover;
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
+  margin-top: -6rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.about__header {
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  z-index: 20;
+  display: block;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.about__sub-header {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  z-index: 2;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.about__paragraph {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.about__border {
+  width: 16.5rem;
+  height: 2px;
+  background: #f75008;
+  margin: 1rem auto;
+}
+
+.about__container2 {
+  margin-top: -2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__box {
+  max-width: 25%;
+  padding: 1.5rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -1rem;
+}
+
+.about__icon {
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.about__title {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #f75008;
 }
 /*# sourceMappingURL=main.css.map */

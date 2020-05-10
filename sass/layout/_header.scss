@@ -9,7 +9,7 @@
   &__welcome {
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 23%;
     transform: translate(-5%, -50%);
   }
 
@@ -21,10 +21,8 @@
   }
 
   &__primary-main {
+    @include main-headers;
     display: block;
-    font-size: 6rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -38,8 +36,4 @@
     margin-left: 17rem;
     animation: moveInRight 1s ease-out;
   }
-}
-
-.center-btn {
-  transform: translateX(41%);
 }

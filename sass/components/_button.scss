@@ -1,3 +1,19 @@
+// OUR SERVICES BUTTON
+.services-btn {
+  text-align: center;
+  margin-top: 3rem;
+
+  &__secondary {
+    @include sub-btn;
+  }
+}
+
+// MAIN HEADER BUTTON STYLE
+
+.center-btn {
+  transform: translateX(41%);
+}
+
 .btn-main {
   &:link,
   &:visited {
@@ -20,7 +36,6 @@
     background-position: 100%;
     color: $color-white;
     transform: translateX(10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   }
 }
 
