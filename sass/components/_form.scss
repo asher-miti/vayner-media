@@ -1,0 +1,44 @@
+// CONTACT FORM
+
+.contact {
+  background: $color-white;
+  padding: 4rem 0;
+
+  &__header {
+    text-align: center;
+    color: $color-black;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  &__border {
+    width: 16.5rem;
+    height: 2px;
+    background: $color-primary;
+    margin: 2.5rem auto;
+  }
+
+  &__form {
+    max-width: 60rem;
+    margin: auto;
+    padding: 0 1rem;
+    overflow: hidden;
+  }
+
+  &__select {
+  }
+
+  &__text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1.6rem 0;
+    border: 0;
+    background: #111;
+    padding: 2rem 4rem;
+    outline: none;
+    color: red;
+    transition: 0.5s;
+    border-radius: 3px;
+  }
+}

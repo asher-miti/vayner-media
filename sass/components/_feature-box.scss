@@ -1,0 +1,83 @@
+// OUR CLIENTS FEATURE SLIDE
+.clients {
+  width: 100%;
+  background: $color-black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &__top {
+    text-align: center;
+    color: $color-white;
+  }
+
+  &__header {
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 1.5rem;
+  }
+
+  &__sub-header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  &__border {
+    width: 16.5rem;
+    height: 2px;
+    background: $color-white;
+    margin: 3rem auto;
+  }
+
+  &__box {
+    text-align: center;
+    margin: -2rem 1rem 1rem 3.8rem;
+    display: inline-block;
+  }
+
+  &__inner-width {
+    max-width: 120rem;
+    margin: auto;
+    padding: 0 2rem;
+  }
+
+  &__icon {
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+    /* background: black; */
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+// CAROUSEL OWL DOTS
+.owl-dots {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.owl-dot {
+  width: 1.4rem;
+  height: 1.4rem;
+  background: white !important;
+  margin: 0 0.6rem;
+  border-radius: 1.4rem;
+  outline: none;
+  transition: 0.3s linear;
+}
+
+.owl-dot.active {
+  width: 3.6rem;
+  background: $color-primary !important;
+}
+
+.owl-dot:hover {
+  width: 3.6rem;
+  background: $color-primary !important;
+}
+
+// END OF CLIENT FEATURE SLIDE
