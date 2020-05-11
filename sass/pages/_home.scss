@@ -1,7 +1,7 @@
 // SERVICES SECTION
 
 .services {
-  background: $color-white;
+  background: $color-white-2;
   height: 110vh;
 
   &__main {
@@ -112,6 +112,7 @@
     text-align: center;
     text-transform: uppercase;
     position: relative;
+    background-color: $color-white-2;
   }
 
   &__header {
