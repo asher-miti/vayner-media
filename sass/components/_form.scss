@@ -26,6 +26,7 @@
   &__title {
     font-weight: bold;
     margin: 0;
+    font-size: 2rem;
   }
 
   &__paragraph {
@@ -75,6 +76,14 @@
     width: 100%;
   }
 
+  & label {
+    font-size: 9px;
+    display: inline-block;
+    text-align: center;
+    transform: translateY(-75%);
+    margin-left: 1.7rem;
+  }
+
   &__details2 {
     display: inline-block;
     margin-right: 0.5rem;
@@ -85,23 +94,11 @@
   }
 }
 
-// h2 {
-//   text-align: center;
-// }
-
 a {
   color: $color-grey-dark-3;
   font-size: 1.4rem;
   text-decoration: none;
   margin: 1.5rem 0;
-}
-
-label {
-  font-size: 9px;
-  display: inline-block;
-  text-align: center;
-  transform: translateY(-75%);
-  margin-left: 1.7rem;
 }
 
 .container {
@@ -197,6 +194,7 @@ label {
   }
 }
 
+// Slide overlay transition
 .container.right-panel-active .overlay {
   transform: translateX(-100%);
 }

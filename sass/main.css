@@ -153,6 +153,60 @@ body {
   }
 }
 
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotate(45deg) scale(1);
+            transform: rotate(45deg) scale(1);
+  }
+  20% {
+    -webkit-transform: rotate(45deg) scale(0.8);
+            transform: rotate(45deg) scale(0.8);
+  }
+  40% {
+    -webkit-transform: rotate(45deg) scale(1.2);
+            transform: rotate(45deg) scale(1.2);
+  }
+  60% {
+    -webkit-transform: rotate(45deg) scale(1);
+            transform: rotate(45deg) scale(1);
+  }
+  80% {
+    -webkit-transform: rotate(45deg) scale(1.3);
+            transform: rotate(45deg) scale(1.3);
+  }
+  100% {
+    -webkit-transform: rotate(45deg) scale(1);
+            transform: rotate(45deg) scale(1);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotate(45deg) scale(1);
+            transform: rotate(45deg) scale(1);
+  }
+  20% {
+    -webkit-transform: rotate(45deg) scale(0.8);
+            transform: rotate(45deg) scale(0.8);
+  }
+  40% {
+    -webkit-transform: rotate(45deg) scale(1.2);
+            transform: rotate(45deg) scale(1.2);
+  }
+  60% {
+    -webkit-transform: rotate(45deg) scale(1);
+            transform: rotate(45deg) scale(1);
+  }
+  80% {
+    -webkit-transform: rotate(45deg) scale(1.3);
+            transform: rotate(45deg) scale(1.3);
+  }
+  100% {
+    -webkit-transform: rotate(45deg) scale(1);
+            transform: rotate(45deg) scale(1);
+  }
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,7 +220,7 @@ body {
   background-color: #000;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 110;
 }
 
 .logo__btn:link, .logo__btn:visited {
@@ -333,6 +387,83 @@ body {
   background-color: #f75008;
 }
 
+.footer {
+  background-color: #000;
+  padding: 4rem;
+  color: #a9a9a9;
+}
+
+.footer__logo-box {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.footer__logo {
+  width: 20rem;
+  height: auto;
+}
+
+.footer__navigation {
+  border-top: 1px solid #c9c7c7;
+  padding-top: 2rem;
+  display: inline-block;
+  margin-left: 3.2rem;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__item {
+  display: inline-block;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.footer__link:link, .footer__link:visited {
+  color: #c9c7c7;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.footer__link:hover, .footer__link:active {
+  color: #f75008;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.footer__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.footer__col1 {
+  font-size: 1.4rem;
+}
+
+.footer__col2 {
+  margin-left: 10rem;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  font-size: 1.3rem;
+}
+
+.footer__copyright {
+  border-top: 1px solid #c9c7c7;
+  padding-top: 3.1rem;
+  width: 95%;
+}
+
 .header {
   background: radial-gradient(circle, rgba(0, 0, 0, 0.9), rgba(71, 71, 71, 0.6)), url("/img/times-square.jpg");
   height: 100vh;
@@ -482,7 +613,8 @@ body {
 
 .clients {
   width: 100%;
-  background: #000;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.86)), to(rgba(0, 0, 0, 0.86))), url(/img/photo-of-people-doing-handshakes-3183197.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86)), url(/img/photo-of-people-doing-handshakes-3183197.jpg);
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,14 +640,6 @@ body {
   margin-bottom: 1rem;
   font-weight: 500;
   padding: 1.5rem;
-  margin-top: 1rem;
-}
-
-.clients__border {
-  width: 16.5rem;
-  height: 2px;
-  background: #fff;
-  margin: 3rem auto;
 }
 
 .clients__box {
@@ -602,6 +726,7 @@ body {
 .contact__title {
   font-weight: bold;
   margin: 0;
+  font-size: 2rem;
 }
 
 .contact__paragraph {
@@ -660,6 +785,15 @@ body {
   width: 100%;
 }
 
+.contact label {
+  font-size: 9px;
+  display: inline-block;
+  text-align: center;
+  -webkit-transform: translateY(-75%);
+          transform: translateY(-75%);
+  margin-left: 1.7rem;
+}
+
 .contact__details2 {
   display: inline-block;
   margin-right: 0.5rem;
@@ -674,15 +808,6 @@ a {
   font-size: 1.4rem;
   text-decoration: none;
   margin: 1.5rem 0;
-}
-
-label {
-  font-size: 9px;
-  display: inline-block;
-  text-align: center;
-  -webkit-transform: translateY(-75%);
-          transform: translateY(-75%);
-  margin-left: 1.7rem;
 }
 
 .container {
@@ -847,6 +972,44 @@ label {
   width: 40px;
 }
 
+.heart {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background: #f75008;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation: animate 1s linear infinite;
+          animation: animate 1s linear infinite;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  bottom: 3.5rem;
+  left: 11.3rem;
+}
+
+.heart::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  width: 10px;
+  height: 5px;
+  background: #f75008;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.heart::after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  width: 5px;
+  height: 10px;
+  background: #f75008;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
 .services {
   background: #f6f5f7;
   height: 110vh;
@@ -951,9 +1114,9 @@ label {
 .about__container1 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("/img/photograph-of-men-having-conversation-seating-on-chair-1015568.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/img/photograph-of-men-having-conversation-seating-on-chair-1015568.jpg");
-  height: 55vh;
+  height: 40vh;
   background-size: cover;
-  background-position: 50% 25%;
+  background-position: 50% 40%;
   background-repeat: no-repeat;
   margin-top: -6rem;
   color: #fff;
@@ -1002,7 +1165,7 @@ label {
   width: 16.5rem;
   height: 2px;
   background: #f75008;
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
 
 .about__container2 {
@@ -1031,7 +1194,7 @@ label {
   width: 10rem;
   height: 10rem;
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .about__title {

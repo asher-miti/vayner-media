@@ -1,7 +1,8 @@
 // OUR CLIENTS FEATURE SLIDE
 .clients {
   width: 100%;
-  background: $color-black;
+  background-image: linear-gradient(rgba($color-black, 0.86), rgba($color-black, 0.86)),
+    url(/img/photo-of-people-doing-handshakes-3183197.jpg);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -22,14 +23,6 @@
     margin-bottom: 1rem;
     font-weight: 500;
     padding: 1.5rem;
-    margin-top: 1rem;
-  }
-
-  &__border {
-    width: 16.5rem;
-    height: 2px;
-    background: $color-white;
-    margin: 3rem auto;
   }
 
   &__box {
