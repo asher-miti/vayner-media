@@ -49,24 +49,18 @@
 }
 // END OF ANIMATION SLIDE
 
-// FOOTER HEART BEATING
-@keyframes animate {
+// FOOTER SOCIAL LINKS
+@keyframes aaa {
   0% {
-    transform: rotate(45deg) scale(1);
+    left: -110%;
+    top: 90%;
   }
-  20% {
-    transform: rotate(45deg) scale(0.8);
-  }
-  40% {
-    transform: rotate(45deg) scale(1.2);
-  }
-  60% {
-    transform: rotate(45deg) scale(1);
-  }
-  80% {
-    transform: rotate(45deg) scale(1.3);
+  50% {
+    left: 10%;
+    top: -30%;
   }
   100% {
-    transform: rotate(45deg) scale(1);
+    left: -10%;
+    top: -10%;
   }
 }

@@ -4,8 +4,20 @@
   color: $color-grey-light-2;
 
   &__logo-box {
-    text-align: center;
-    margin-bottom: 8rem;
+    // text-align: center;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    display: grid;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: $color-grey-light-2;
+    }
   }
 
   &__logo {
@@ -14,21 +26,40 @@
   }
 
   &__navigation {
-    border-top: 1px solid $color-grey-light-1;
-    padding-top: 2rem;
-    display: inline-block;
-    margin-left: 3.2rem;
   }
 
   &__list {
     list-style: none;
+    display: flex;
+    justify-content: center;
   }
 
-  &__item {
-    display: inline-block;
+  &__navigation2 {
+    margin-top: 3rem;
+  }
 
-    &:not(:last-child) {
-      margin-right: 1rem;
+  &__copyright {
+    font-size: 1.3rem;
+    font-weight: 500;
+
+    i {
+      color: $color-primary;
+      font-size: 1.3rem;
+    }
+  }
+
+  &__credit {
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      color: $color-grey-light-1;
+      transition: all.2s;
+      font-weight: 500;
+    }
+    &:hover,
+    &:active {
+      color: $color-primary;
+      transform: scale(1.04);
     }
   }
 
@@ -38,37 +69,61 @@
       color: $color-grey-light-1;
       text-decoration: none;
       text-transform: uppercase;
-      display: inline-block;
       transition: all 0.2s;
+      margin-right: 3rem;
+      font-weight: 500;
+      font-size: 1.4rem;
     }
 
     &:hover,
     &:active {
       color: $color-primary;
-      transform: scale(1.03);
+      transform: scale(1.04);
     }
   }
+}
 
-  &__row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 4rem;
-    align-content: center;
+// SOCIAL MEDIA LINKS
+.social {
+  width: 100%;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background: $color-grey-light-3;
+  margin: 1rem;
+  border-radius: 30%;
+  color: $color-primary;
+  overflow: hidden;
+  position: relative;
+
+  i {
+    line-height: 4rem;
+    font-size: 2rem;
+    transition: 0.2s linear;
   }
 
-  &__col1 {
-    font-size: 1.4rem;
+  &:hover i {
+    transform: scale(1.3);
+    color: $color-white-2;
   }
 
-  &__col2 {
-    margin-left: 10rem;
-    transform: translateY(-1px);
-    font-size: 1.3rem;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: $color-primary;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
   }
 
-  &__copyright {
-    border-top: 1px solid $color-grey-light-1;
-    padding-top: 3.1rem;
-    width: 95%;
+  &:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
   }
 }
