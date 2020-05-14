@@ -11,6 +11,14 @@
     top: 50%;
     left: 23%;
     transform: translate(-5%, -50%);
+
+    @include respond(tab-port) {
+      left: 28%;
+    }
+
+    @include respond(phone) {
+      left: 12%;
+    }
   }
 
   &__main {
@@ -26,6 +34,17 @@
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+
+    @include respond(tab-port) {
+      letter-spacing: 0rem;
+      font-size: 2.5rem;
+    }
+
+    @include respond(phone) {
+      font-size: 4rem;
+      width: 100vw;
+      animation: none;
+    }
   }
 
   &__primary-sub {
@@ -35,5 +54,14 @@
     letter-spacing: 0.1rem;
     margin-left: 17rem;
     animation: moveInRight 1s ease-out;
+
+    @include respond(tab-port) {
+      letter-spacing: 0rem;
+      font-size: 1.4rem;
+      margin-left: 3.5rem;
+    }
+    @include respond(phone) {
+      display: none;
+    }
   }
 }

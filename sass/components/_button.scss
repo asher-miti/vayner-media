@@ -12,6 +12,14 @@
 
 .center-btn {
   transform: translateX(41%);
+
+  @include respond(tab-port) {
+    transform: translateX(30%);
+  }
+
+  @include respond(phone) {
+    transform: translateX(29%);
+  }
 }
 
 .btn-main {
@@ -53,6 +61,11 @@
     text-transform: uppercase;
     transition: transform 80ms ease-in;
     cursor: pointer;
+
+    @include respond(phone) {
+      padding: 1rem 3rem;
+      margin-top: 1rem;
+    }
   }
 
   &__btn:active {

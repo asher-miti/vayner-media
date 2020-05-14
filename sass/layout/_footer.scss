@@ -3,13 +3,21 @@
   padding: 4rem;
   color: $color-grey-light-2;
 
+  @include respond(phone) {
+    padding: 2rem;
+  }
+
   &__logo-box {
     // text-align: center;
     grid-template-columns: 1fr max-content 1fr;
     grid-column-gap: 1.5rem;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     display: grid;
+
+    @include respond(phone) {
+      grid-column-gap: 1.2rem;
+    }
 
     &::before,
     &::after {
@@ -23,9 +31,11 @@
   &__logo {
     width: 20rem;
     height: auto;
-  }
 
-  &__navigation {
+    @include respond(phone) {
+      width: 16rem;
+      height: auto;
+    }
   }
 
   &__list {
@@ -35,16 +45,22 @@
   }
 
   &__navigation2 {
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 
   &__copyright {
     font-size: 1.3rem;
     font-weight: 500;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    @include respond(phone) {
+      font-size: 1.1rem;
+    }
 
     i {
       color: $color-primary;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
     }
   }
 
@@ -63,16 +79,21 @@
     }
   }
 
-  &__link {
+  &__links {
     &:link,
     &:visited {
       color: $color-grey-light-1;
       text-decoration: none;
       text-transform: uppercase;
       transition: all 0.2s;
-      margin-right: 3rem;
       font-weight: 500;
       font-size: 1.4rem;
+      margin-left: 6rem;
+
+      @include respond(phone) {
+        font-size: 1rem;
+        margin-left: 2rem;
+      }
     }
 
     &:hover,
@@ -92,17 +113,27 @@
   display: inline-block;
   width: 4rem;
   height: 4rem;
-  background: $color-grey-light-3;
+  background: $color-white-2;
   margin: 1rem;
   border-radius: 30%;
   color: $color-primary;
   overflow: hidden;
   position: relative;
 
+  @include respond(phone) {
+    height: 3rem;
+    width: 3rem;
+  }
+
   i {
     line-height: 4rem;
     font-size: 2rem;
     transition: 0.2s linear;
+
+    @include respond(phone) {
+      line-height: 3rem;
+      font-size: 1.6rem;
+    }
   }
 
   &:hover i {
@@ -127,3 +158,4 @@
     left: -10%;
   }
 }
+// END OF SOCIAL MEDIA LINKS

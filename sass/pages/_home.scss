@@ -2,7 +2,11 @@
 
 .services {
   background: $color-white-2;
-  height: 110vh;
+  height: 120vh;
+
+  @include respond(tab-port) {
+    height: 80%;
+  }
 
   &__main {
     text-align: center;
@@ -84,7 +88,7 @@
 
 @media screen and (max-width: 768px) {
   .services__box {
-    max-width: 50%;
+    max-width: 35%;
   }
 }
 
@@ -107,12 +111,16 @@
     background-size: cover;
     background-position: 50% 40%;
     background-repeat: no-repeat;
-    margin-top: -6rem;
+    margin-top: 2rem;
     color: $color-white;
     text-align: center;
     text-transform: uppercase;
     position: relative;
     background-color: $color-white-2;
+
+    @include respond(phone) {
+      height: 30vh;
+    }
   }
 
   &__header {
@@ -124,6 +132,14 @@
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include respond(phone) {
+      font-size: 4rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 3.8rem;
+    }
   }
 
   &__sub-header {
@@ -136,6 +152,14 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include respond(phone) {
+      font-size: 1.2rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 1.2rem;
+    }
   }
 
   &__paragraph {
@@ -145,6 +169,16 @@
     text-align: center;
     padding: 1.5rem;
     margin-top: 1.5rem;
+
+    @include respond(tab-port) {
+      font-size: 1.3rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      padding: 0.8rem;
+    }
   }
 
   &__border {
@@ -168,8 +202,17 @@
     padding: 1.5rem;
     text-align: center;
     display: block;
-    margin: 0 auto;
+    margin: 0 10rem;
     margin-bottom: -1rem;
+
+    @include respond(phone) {
+      margin: 4rem;
+      max-width: 50%;
+    }
+
+    @include respond(tab-port) {
+      padding: 1.2rem;
+    }
   }
 
   &__icon {
@@ -178,6 +221,12 @@
     height: 10rem;
     margin-bottom: 1rem;
     margin-top: 3rem;
+
+    @include respond(phone) {
+      width: 9rem;
+      height: 9rem;
+      margin-top: 1.5rem;
+    }
   }
 
   &__title {
@@ -185,6 +234,10 @@
     font-size: 1.8rem;
     font-weight: 500;
     color: $color-primary;
+
+    @include respond(phone) {
+      font-size: 1.6rem;
+    }
   }
 }
 
