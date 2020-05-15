@@ -188,10 +188,6 @@ a {
   max-width: 100%;
   min-height: 480px;
   margin-top: 1.8rem;
-
-  @include respond(phone) {
-    min-width: 100%;
-  }
 }
 
 .form-container {
