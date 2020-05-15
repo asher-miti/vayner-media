@@ -395,8 +395,8 @@ body {
 }
 
 .toggle .line1 {
-  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-          transform: rotate(-45deg) translate(-5px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-3px, 6px);
+          transform: rotate(-45deg) translate(-3px, 6px);
   background-color: #f75008;
 }
 
@@ -405,8 +405,8 @@ body {
 }
 
 .toggle .line3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -6px);
-          transform: rotate(45deg) translate(-5px, -6px);
+  -webkit-transform: rotate(45deg) translate(-3px, -6px);
+          transform: rotate(45deg) translate(-3px, -6px);
   background-color: #f75008;
 }
 
@@ -1046,9 +1046,7 @@ body {
 @media (max-width: 37.5em) {
   .clients {
     height: 90%;
-    margin-left: auto;
     background-size: cover;
-    width: 100%;
   }
 }
 
@@ -1155,7 +1153,6 @@ body {
 @media (max-width: 37.5em) {
   .clients__inner-width {
     padding: 0;
-    margin: 13.5rem;
   }
 }
 
@@ -1180,9 +1177,22 @@ body {
   vertical-align: middle;
 }
 
+@media (max-width: 37.5em) {
+  .clients-owl {
+    left: 25rem;
+    margin-bottom: 3rem;
+  }
+}
+
 .owl-dots {
   text-align: center;
   margin-top: 4rem;
+}
+
+@media (max-width: 37.5em) {
+  .owl-dots {
+    display: none;
+  }
 }
 
 .owl-dot {
@@ -1424,6 +1434,7 @@ body {
 @media (max-width: 37.5em) {
   .contact__sub-title {
     font-size: 8px;
+    width: 10rem;
   }
 }
 

@@ -9,9 +9,7 @@
 
   @include respond(phone) {
     height: 90%;
-    margin-left: auto;
     background-size: cover;
-    width: 100%;
   }
 
   @include respond(tab-port) {
@@ -88,7 +86,6 @@
 
     @include respond(phone) {
       padding: 0;
-      margin: 13.5rem;
     }
 
     @include respond(tab-port) {
@@ -109,10 +106,21 @@
   }
 }
 
+.clients-owl {
+  @include respond(phone) {
+    left: 25rem;
+    margin-bottom: 3rem;
+  }
+}
+
 // CAROUSEL OWL DOTS
 .owl-dots {
   text-align: center;
   margin-top: 4rem;
+
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 .owl-dot {
