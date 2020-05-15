@@ -105,7 +105,7 @@
 .about {
   // Container1 with main/sub title and background image
   &__container1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../../img/about-us.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/img/about-us.jpg");
     height: 40vh;
     background-size: cover;
     background-position: 50% 40%;
