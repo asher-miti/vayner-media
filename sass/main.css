@@ -1005,8 +1005,8 @@ body {
 
 .clients {
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.89)), to(rgba(0, 0, 0, 0.89))), url(/img/photo-of-people-doing-handshakes-3183197.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.89)), url(/img/photo-of-people-doing-handshakes-3183197.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.89)), to(rgba(0, 0, 0, 0.89))), url("/img/clients.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.89)), url("/img/clients.jpg");
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1684,8 +1684,8 @@ a {
 }
 
 .about__container1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("/img/photograph-of-men-having-conversation-seating-on-chair-1015568.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/img/photograph-of-men-having-conversation-seating-on-chair-1015568.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("img/about-us.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("img/about-us.jpg");
   height: 40vh;
   background-size: cover;
   background-position: 50% 40%;
