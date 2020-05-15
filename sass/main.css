@@ -1005,8 +1005,8 @@ body {
 
 .clients {
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.89)), to(rgba(0, 0, 0, 0.89))), url("/img/clients.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.89)), url("/img/clients.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.89)), to(rgba(0, 0, 0, 0.89))), url("img/clients.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.89)), url("img/clients.jpg");
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
