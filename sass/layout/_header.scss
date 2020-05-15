@@ -12,12 +12,12 @@
     left: 23%;
     transform: translate(-5%, -50%);
 
-    @include respond(tab-port) {
-      left: 24%;
+    @include respond(phone) {
+      transform: translate(-5%, -50%);
     }
 
-    @include respond(phone) {
-      left: 20%;
+    @include respond(tab-land) {
+      transform: translate(-5%, -50%);
     }
   }
 
@@ -26,10 +26,24 @@
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 3rem;
+
+    span {
+      font-size: 3rem;
+
+      @include respond(tab-land) {
+        font-size: 5rem;
+      }
+
+      @include respond(phone) {
+        font-size: 2.6rem;
+      }
+    }
   }
 
   &__primary-main {
-    @include main-headers;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
     display: block;
     animation-name: moveInLeft;
     animation-duration: 1s;
@@ -38,12 +52,6 @@
     @include respond(tab-port) {
       letter-spacing: 0rem;
       font-size: 3.5rem;
-    }
-
-    @include respond(phone) {
-      font-size: 3rem;
-      width: 100vw;
-      animation: none;
     }
 
     @include respond(tab-land) {
@@ -62,9 +70,9 @@
     @include respond(tab-port) {
       display: none;
     }
-    @include respond(phone) {
-      display: none;
-    }
+    // @include respond(phone) {
+    //   display: none;
+    // }
 
     @include respond(tab-land) {
       display: none;

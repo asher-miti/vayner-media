@@ -10,6 +10,7 @@ html {
   // This defines what 1rem is
   font-size: 62.5%; //1rem = 10px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 
   @include respond(tab-land) {
     //width < 1200

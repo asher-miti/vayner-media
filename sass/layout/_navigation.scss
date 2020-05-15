@@ -11,9 +11,6 @@
   @include respond(tab-land) {
     width: 100%;
   }
-  @include respond(phone) {
-    width: 75%;
-  }
 }
 .logo {
   // position: fixed;
@@ -101,7 +98,6 @@
     overflow-x: hidden;
   }
   .logo {
-    position: sticky;
     &__links {
       position: absolute;
       right: 0;
@@ -122,12 +118,11 @@
 
     &__burger {
       display: block;
-      margin-right: 10rem; //adjustd just now!
     }
   }
 
   .wrapper-active {
-    transform: translateX(-30%);
+    transform: translateX(0%);
   }
 }
 

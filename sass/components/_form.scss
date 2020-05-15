@@ -9,6 +9,10 @@
   height: 100vh;
   margin: -20px 0 50px;
 
+  @include respond(tab-land) {
+    height: 65vh;
+  }
+
   @include respond(phone) {
     width: auto;
     padding: 0rem;

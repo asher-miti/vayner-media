@@ -18,7 +18,7 @@
   }
 
   @include respond(phone) {
-    transform: translateX(18%);
+    margin-right: 15rem;
   }
 
   @include respond(tab-land) {
