@@ -7,6 +7,13 @@
   position: fixed;
   width: 100%;
   z-index: 110;
+
+  @include respond(tab-land) {
+    width: 100%;
+  }
+  @include respond(phone) {
+    width: 75%;
+  }
 }
 .logo {
   // position: fixed;
@@ -20,6 +27,10 @@
       padding: 0.4rem;
       transition: all 0.2s;
       margin: 0rem 1.2rem;
+
+      @include respond(tab-land) {
+        margin: 0;
+      }
     }
     &:hover {
       background-color: $color-primary;
@@ -88,7 +99,6 @@
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
-    // width: 100vw;
   }
   .logo {
     position: sticky;
@@ -112,11 +122,12 @@
 
     &__burger {
       display: block;
+      margin-right: 10rem; //adjustd just now!
     }
   }
 
   .wrapper-active {
-    transform: translateX(0%);
+    transform: translateX(-30%);
   }
 }
 

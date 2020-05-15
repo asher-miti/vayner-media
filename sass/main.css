@@ -231,6 +231,18 @@ body {
   z-index: 110;
 }
 
+@media (max-width: 75em) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .wrapper {
+    width: 75%;
+  }
+}
+
 .logo__btn:link, .logo__btn:visited {
   color: #fff;
   text-decoration: none;
@@ -239,6 +251,12 @@ body {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   margin: 0rem 1.2rem;
+}
+
+@media (max-width: 75em) {
+  .logo__btn:link, .logo__btn:visited {
+    margin: 0;
+  }
 }
 
 .logo__btn:hover {
@@ -352,10 +370,11 @@ body {
   }
   .logo__burger {
     display: block;
+    margin-right: 10rem;
   }
   .wrapper-active {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
   }
 }
 
@@ -468,6 +487,12 @@ body {
           justify-content: center;
 }
 
+@media (max-width: 37.5em) {
+  .footer__list {
+    margin-right: -2rem;
+  }
+}
+
 .footer__navigation2 {
   margin-top: 4rem;
 }
@@ -515,13 +540,6 @@ body {
   margin-left: 6rem;
 }
 
-@media (max-width: 37.5em) {
-  .footer__links:link, .footer__links:visited {
-    font-size: 1rem;
-    margin-left: 2rem;
-  }
-}
-
 @media (max-width: 56.25em) {
   .footer__links:link, .footer__links:visited {
     font-size: 1.2rem;
@@ -538,6 +556,12 @@ body {
 .social {
   width: 100%;
   text-align: center;
+}
+
+@media (max-width: 75em) {
+  .social {
+    margin-left: 1rem;
+  }
 }
 
 .btn {
@@ -621,7 +645,7 @@ body {
 
 @media (max-width: 37.5em) {
   .header__welcome {
-    left: 12%;
+    left: 20%;
   }
 }
 
@@ -655,10 +679,16 @@ body {
 
 @media (max-width: 37.5em) {
   .header__primary-main {
-    font-size: 4rem;
+    font-size: 3rem;
     width: 100vw;
     -webkit-animation: none;
             animation: none;
+  }
+}
+
+@media (max-width: 75em) {
+  .header__primary-main {
+    font-size: 3.8rem;
   }
 }
 
@@ -679,6 +709,12 @@ body {
 }
 
 @media (max-width: 37.5em) {
+  .header__primary-sub {
+    display: none;
+  }
+}
+
+@media (max-width: 75em) {
   .header__primary-sub {
     display: none;
   }
@@ -740,8 +776,15 @@ body {
 
 @media (max-width: 37.5em) {
   .center-btn {
-    -webkit-transform: translateX(29%);
-            transform: translateX(29%);
+    -webkit-transform: translateX(18%);
+            transform: translateX(18%);
+  }
+}
+
+@media (max-width: 75em) {
+  .center-btn {
+    -webkit-transform: translateX(32%);
+            transform: translateX(32%);
   }
 }
 
@@ -837,6 +880,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 80rem;
   max-height: 60rem;
   width: 60%;
@@ -879,8 +925,20 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+  width: 55%;
   padding: 3rem;
-  width: 60%;
+}
+
+@media (max-width: 56.25em) {
+  .popup__text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 75em) {
+  .popup__text {
+    text-align: center;
+  }
 }
 
 .popup__text h1 {
@@ -889,6 +947,20 @@ body {
   margin-bottom: 2rem;
   text-transform: uppercase;
   color: #f75008;
+}
+
+@media (max-width: 56.25em) {
+  .popup__text h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 75em) {
+  .popup__text h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
 }
 
 .popup__text p {
@@ -959,6 +1031,18 @@ body {
 
 @media (max-width: 56.25em) {
   .clients {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-size: cover;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 75em) {
+  .clients {
     height: 100%;
     width: auto;
     -webkit-box-pack: center;
@@ -976,6 +1060,13 @@ body {
   color: #fff;
 }
 
+@media (max-width: 75em) {
+  .clients__top {
+    width: 80%;
+    margin-left: 10rem;
+  }
+}
+
 .clients__header {
   text-transform: uppercase;
   font-size: 3rem;
@@ -991,6 +1082,7 @@ body {
 @media (max-width: 56.25em) {
   .clients__header {
     font-size: 2.5rem;
+    overflow: hidden;
   }
 }
 
@@ -1019,6 +1111,12 @@ body {
   display: inline-block;
 }
 
+@media (max-width: 75em) {
+  .clients__box {
+    margin: 0;
+  }
+}
+
 .clients__inner-width {
   max-width: 120rem;
   margin: auto;
@@ -1036,6 +1134,12 @@ body {
 @media (max-width: 56.25em) {
   .clients__inner-width {
     max-width: 50rem;
+  }
+}
+
+@media (max-width: 75em) {
+  .clients__inner-width {
+    max-width: 80rem;
   }
 }
 

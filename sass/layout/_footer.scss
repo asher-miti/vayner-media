@@ -47,6 +47,10 @@
     list-style: none;
     display: flex;
     justify-content: center;
+
+    @include respond(phone) {
+      margin-right: -2rem;
+    }
   }
 
   &__navigation2 {
@@ -95,11 +99,6 @@
       font-size: 1.4rem;
       margin-left: 6rem;
 
-      @include respond(phone) {
-        font-size: 1rem;
-        margin-left: 2rem;
-      }
-
       @include respond(tab-port) {
         font-size: 1.2rem;
         margin-left: 2.4rem;
@@ -118,6 +117,10 @@
 .social {
   width: 100%;
   text-align: center;
+
+  @include respond(tab-land) {
+    margin-left: 1rem;
+  }
 }
 .btn {
   display: inline-block;
