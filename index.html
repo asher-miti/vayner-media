@@ -151,7 +151,7 @@
         </div>
       </div>
       <div class="services-btn u-margin-top-medium u-margin-bottom-big">
-        <a href="#!" class="services-btn__secondary">Explore All Services</a>
+        <a href="#popup" class="services-btn__secondary">Explore All Services</a>
       </div>
     </section>
 
@@ -465,17 +465,17 @@
       <!-- SOCIAL MEDIA LINKS -->
 
       <div class="social">
-        <a class="btn" target="_blank" href="https://github.com/asher-miti">
-          <i class="fab fa-github"></i>
-        </a>
-        <a class="btn" target="_blank" href="https://twitter.com/imjustasher">
-          <i class="fab fa-twitter"></i>
-        </a>
         <a class="btn" target="_blank" href="https://asher-mitilinakis.com/">
           <i class="fas fa-link"></i>
         </a>
+        <a class="btn" target="_blank" href="https://github.com/asher-miti">
+          <i class="fab fa-github"></i>
+        </a>
         <a class="btn" target="_blank" href="https://www.linkedin.com/in/asher-mitilinakis/">
           <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a class="btn" target="_blank" href="https://twitter.com/imjustasher">
+          <i class="fab fa-twitter"></i>
         </a>
       </div>
       <!-- END OF SOCIAL LINKS -->
@@ -483,11 +483,33 @@
     <!-- END OF FOOTER -->
 
     <!-- POPUP INFO -->
-    <div class="popup">
+    <div class="popup" id="popup">
       <div class="popup__content">
-        <div class="popup__left"></div>
+        <div class="popup__close"><a href="#services">X</a></div>
+        <div class="popup__photo">
+          <img src="/img/profile copy.png" alt="Profile Picture" />
+        </div>
+        <div class="popup__text">
+          <h1>Thank you for viewing my page!</h1>
+          <p>
+            I really appreciate you taking the time to review this concept page I built! Please forgive me if
+            there are any minor erros on the page, I'm still very early into my development career and as I
+            built this entirely from scratch, I appreciate it may not be perfect.<br />
+            <br />
+            That being said, I love the VaynerMedia brand and I hope this showcases my potential and how eager
+            I am to grow within this industry. I consider myself to be very hard-working and although I
+            appreciate due to the timing, there likely isn't an available opportunity within the company at
+            present, I'd still love to show my interest and perhaps, buy a member of the team a coffee at some
+            point to pick their brain on all things software engineering related.
+            <br />
+            <br />
+            Please continue to the end of the page where you can find links to my portfolio and other social
+            platforms. I wish the company and the team all the best for the future.
+          </p>
+        </div>
       </div>
     </div>
+    <!-- END OF POPUP -->
 
     <script src="/js/script.js"></script>
     <script src="/js/slider.js"></script>

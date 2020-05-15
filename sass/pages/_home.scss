@@ -134,7 +134,7 @@
     transform: translate(-50%, -50%);
 
     @include respond(phone) {
-      font-size: 4rem;
+      font-size: 3rem;
     }
 
     @include respond(tab-port) {
@@ -154,7 +154,7 @@
     transform: translate(-50%, -50%);
 
     @include respond(phone) {
-      font-size: 1.2rem;
+      font-size: 0.8rem;
     }
 
     @include respond(tab-port) {

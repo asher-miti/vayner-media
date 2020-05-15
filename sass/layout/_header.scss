@@ -13,7 +13,7 @@
     transform: translate(-5%, -50%);
 
     @include respond(tab-port) {
-      left: 28%;
+      left: 24%;
     }
 
     @include respond(phone) {
@@ -37,7 +37,7 @@
 
     @include respond(tab-port) {
       letter-spacing: 0rem;
-      font-size: 2.5rem;
+      font-size: 3.5rem;
     }
 
     @include respond(phone) {
@@ -56,9 +56,7 @@
     animation: moveInRight 1s ease-out;
 
     @include respond(tab-port) {
-      letter-spacing: 0rem;
-      font-size: 1.4rem;
-      margin-left: 3.5rem;
+      display: none;
     }
     @include respond(phone) {
       display: none;

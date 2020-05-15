@@ -36,6 +36,11 @@
       width: 16rem;
       height: auto;
     }
+
+    @include respond(tab-port) {
+      width: 17rem;
+      height: auto;
+    }
   }
 
   &__list {
@@ -93,6 +98,11 @@
       @include respond(phone) {
         font-size: 1rem;
         margin-left: 2rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: 1.2rem;
+        margin-left: 2.4rem;
       }
     }
 
