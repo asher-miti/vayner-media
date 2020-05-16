@@ -760,8 +760,8 @@ body {
 }
 
 .center-btn {
-  -webkit-transform: translateX(41%);
-          transform: translateX(41%);
+  -webkit-transform: translateX(38%);
+          transform: translateX(38%);
 }
 
 @media (max-width: 56.25em) {
