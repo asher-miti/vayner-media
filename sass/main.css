@@ -478,8 +478,8 @@ body {
 }
 
 @media (max-width: 37.5em) {
-  .footer__list {
-    margin-right: -3rem;
+  .footer__list:not(:last-child) {
+    margin-right: 3rem;
   }
 }
 
@@ -539,7 +539,7 @@ body {
 
 @media (max-width: 37.5em) {
   .footer__links:link, .footer__links:visited {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 1.3rem;
   }
 }
@@ -638,6 +638,7 @@ body {
   .header__welcome {
     -webkit-transform: translate(-5%, -50%);
             transform: translate(-5%, -50%);
+    left: 17%;
   }
 }
 
@@ -772,7 +773,7 @@ body {
 
 @media (max-width: 37.5em) {
   .center-btn {
-    margin-right: 15rem;
+    margin-right: 10rem;
   }
 }
 
@@ -1122,7 +1123,9 @@ body {
 
 @media (max-width: 37.5em) {
   .clients__sub-header {
-    display: none;
+    display: block;
+    width: 75%;
+    margin-left: 8rem;
   }
 }
 
@@ -1746,6 +1749,12 @@ a {
   }
 }
 
+@media (max-width: 37.5em) {
+  .about {
+    margin-top: -22rem;
+  }
+}
+
 .about__container1 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("/img/about-us.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/img/about-us.jpg");
@@ -1759,12 +1768,6 @@ a {
   text-transform: uppercase;
   position: relative;
   background-color: #f6f5f7;
-}
-
-@media (max-width: 37.5em) {
-  .about__container1 {
-    margin-top: -20rem;
-  }
 }
 
 @media (max-width: 75em) {

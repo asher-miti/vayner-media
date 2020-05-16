@@ -115,6 +115,10 @@
 // ABOUT US SECTION
 
 .about {
+  @include respond(phone) {
+    margin-top: -22rem;
+  }
+
   // Container1 with main/sub title and background image
   &__container1 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/img/about-us.jpg");
@@ -128,10 +132,6 @@
     text-transform: uppercase;
     position: relative;
     background-color: $color-white-2;
-
-    @include respond(phone) {
-      margin-top: -20rem;
-    }
 
     @include respond(tab-land) {
       height: 50vh;

@@ -61,7 +61,9 @@
     padding: 1.5rem;
 
     @include respond(phone) {
-      display: none;
+      display: block;
+      width: 75%;
+      margin-left: 8rem;
     }
 
     @include respond(tab-port) {
