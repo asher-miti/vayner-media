@@ -540,7 +540,7 @@ body {
 @media (max-width: 37.5em) {
   .footer__links:link, .footer__links:visited {
     font-size: 1rem;
-    margin-left: 1.3rem;
+    margin-left: 1.1rem;
   }
 }
 
@@ -959,6 +959,7 @@ body {
   .popup__text {
     text-align: center;
     width: 100%;
+    padding: 1.5rem;
   }
 }
 
