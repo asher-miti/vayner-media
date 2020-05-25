@@ -1335,12 +1335,12 @@ body {
 }
 
 .contact__text {
-  resize: none;
   background-color: #eee;
   border: none;
   padding: 1.2rem 1.5rem;
   margin: 0.8rem 0;
   width: 100%;
+  font-family: inherit;
 }
 
 @media (max-width: 37.5em) {
@@ -1376,6 +1376,7 @@ body {
   padding: 8px 15px;
   margin: 8px 0;
   width: 100%;
+  font-family: "Montserrat";
 }
 
 @media (max-width: 37.5em) {
@@ -1416,7 +1417,7 @@ body {
 
 .contact__details2 {
   display: inline-block;
-  margin-right: 0.5rem;
+  margin-right: 25rem;
 }
 
 @media (max-width: 37.5em) {
@@ -1426,6 +1427,12 @@ body {
 }
 
 @media (max-width: 56.25em) {
+  .contact__details2 {
+    display: none;
+  }
+}
+
+@media (max-width: 75em) {
   .contact__details2 {
     display: none;
   }
